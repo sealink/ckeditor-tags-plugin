@@ -1,12 +1,14 @@
-### ckeditor-liquidtag-plugin  
+## ckeditor-liquidtag-plugin  
 
-Present a list of tags via an html select which can be selected and inserted into a document.
-
+Adds a toolbar icon and dialogue which allows the user to select a record from a pre-defined list of records.
 
 ### How to Install?
 
-```
-npm -i ckeditor-tags-plugin --save```
+```npm -i ckeditor-tags-plugin --save```
+
+
+### Configuration
+
 ```
 CKEDITOR.config.extraPlugins: 'tags'
 CKEDITOR.config.tags: {
@@ -17,6 +19,7 @@ CKEDITOR.config.tags: {
 ```
 
 Items have the format
+
 ```
 [
   ["Item 1", "Value 1" ],
