@@ -22,7 +22,7 @@ Items have the format
 
 ```
 [
-  ["Item 1", "Value 1" ],
+  ["Item 1", "Value 1"],
   ["Item 2", "Value 2"],
 ]
 ```
