@@ -1,6 +1,5 @@
+/* global CKEDITOR */
 CKEDITOR.dialog.add("tagDialog", function(editor) {
-  config = editor.config.tags;
-
   return {
     title: "Tag Properties",
     minWidth: 300,
@@ -13,8 +12,8 @@ CKEDITOR.dialog.add("tagDialog", function(editor) {
           {
             type: 'select',
             id: 'tag-id',
-            label: config.label,
-            items: config.items,
+            label: editor.config.tags.label,
+            items: editor.config.tags.items,
             validate: CKEDITOR.dialog.validate.notEmpty('Tag field cannot be empty'),
             required: true
           }
@@ -22,8 +21,7 @@ CKEDITOR.dialog.add("tagDialog", function(editor) {
       }
     ],
     onOk: function() {
-      value = this.getValueOf('tab-tags', 'tag-id');
-      return editor.insertText(value);
+      return editor.insertText(this.getValueOf('tab-tags', 'tag-id'));
     }
   };
 });

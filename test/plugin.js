@@ -1,4 +1,4 @@
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 9000000;
+/* global CKEDITOR, setFixtures */
 
 describe('CKEditor Plugin', function () {
   var editorInstance = null;
@@ -24,7 +24,8 @@ describe('CKEditor Plugin', function () {
   });
 
   afterEach(function() {
-    dialog = CKEDITOR.dialog.getCurrent();
+    var dialog = CKEDITOR.dialog.getCurrent();
+
     if (dialog) {
       dialog.hide();
     }
@@ -39,9 +40,11 @@ describe('CKEditor Plugin', function () {
     beforeEach(function(startTests) {
       editorInstance.execCommand('showTags');
       editorInstance.on('dialogShow', function() {
-        // make sure the DOM is fully ready
-        setTimeout(function(){ startTests() }, 200);
-      })
+        // Make sure the DOM is fully ready
+        setTimeout(function() {
+          startTests();
+        }, 200);
+      });
     });
 
     it('Should initalise the list items', function() {
@@ -63,13 +66,16 @@ describe('CKEditor Plugin', function () {
     it('Should validate selection', function() {
       spyOn(window, 'alert');
       CKEDITOR.dialog.getCurrent().click("ok");
+
       expect(window.alert).toHaveBeenCalledWith('Tag field cannot be empty');
     });
 
     it('should insert the selected text', function() {
       var select = $('.cke_dialog_ui_input_select');
+
       select.val("Value 1");
       CKEDITOR.dialog.getCurrent().click("ok");
+
       expect(editorInstance.getSnapshot()).toContain("Value 1")
     });
   });
@@ -85,6 +91,6 @@ describe('CKEditor Plugin', function () {
 
     it('Should add toolbar button', function() {
       expect(editorInstance.ui.get('InsertTag')).toBeDefined();
-    })
+    });
   });
 });

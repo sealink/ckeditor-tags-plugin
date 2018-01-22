@@ -1,6 +1,7 @@
 ## ckeditor-liquidtag-plugin  
 
-Adds a toolbar icon and dialogue which allows the user to select a record from a pre-defined list of records.
+Allows the user to select from a pre-defined list of records and have
+it inserted into the editor at the current selection location.
 
 ### How to Install?
 
@@ -12,7 +13,6 @@ Adds a toolbar icon and dialogue which allows the user to select a record from a
 ```
 CKEDITOR.config.extraPlugins: 'tags'
 CKEDITOR.config.tags: {
-  'id': 'liquidtag',
   'label': 'Tags',
   'items': []
 }

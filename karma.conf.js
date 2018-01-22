@@ -14,35 +14,30 @@ module.exports = function (config) {
                 included: false,
                 served: true
             },
-
             {
                 pattern: 'node_modules/ckeditor/config.js',
                 watched: false,
                 included: false,
                 served: true
             },
-
             {
                 pattern: 'node_modules/ckeditor/styles.js',
                 watched: false,
                 included: false,
                 served: true
             },
-
             {
                 pattern: 'node_modules/ckeditor/contents.css',
                 watched: false,
                 included: false,
                 served: true
             },
-
             {
                 pattern: 'node_modules/ckeditor/skins/moono-lisa/**/*',
                 watched: false,
                 included: false,
                 served: true
             },
-
             {
                 pattern: 'node_modules/ckeditor/plugins/**/*',
                 watched: false,
@@ -57,6 +52,11 @@ module.exports = function (config) {
             },
             'test/**/*.js',
         ],
+        // optionally, configure the reporter
+        coverageReporter: {
+          type : 'text',
+          dir : 'coverage/'
+        },
         autoWatch: true,
         frameworks: ['jasmine-jquery', 'jasmine'],
         browsers: ['Chrome'],

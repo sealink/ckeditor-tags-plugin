@@ -1,3 +1,4 @@
+/* global CKEDITOR */
 CKEDITOR.plugins.add("tags", {
   icons: "tags",
   init: function(editor) {
