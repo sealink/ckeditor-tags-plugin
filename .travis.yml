@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '6.0'
+- '8.0'
+deploy:
+  provider: npm
+  email: support@travellink.com.au
+  api_key:
+    secure: s+L4ASj6N40i+oGu54PvM92BeT7SicsmP/4FAO8AGCHNGbeDxsssbIcA2xE6jRtFhe5nUnAd9KIrxVZpGVDCOSAhaYvACUBctfaF5qhTUPpTRlFA1r5y3LMQFm8gqVssZJBypWDtyWjMAyjxq/R/RbYfRcL+Xo6Y/6ueCCosQ9U/AuNR8pTBqUpg2iJ2M96iDhXVhhh1cXTgeQhvotUdTc/5V3PbaV9lanrvGoexp9JursZsAnoSHwS6k6vfoft4tL8re/ThKjK6E3h1YqyuV5CjG9MFx5ZijmXQ6DWvnmKF30UTg+8zHHDnqDEbMTFBvhffD7gzIM7vN0wpxAP5IHDBHWZJgC3BCDULSrlWRpWrP6udz/ED3MMWTidk6rG+B3Emyf0OrWuVNii25RL1JO1MQPoRI2Yi6qMKbu1yaL5Gd+3FGPxHATzsydViU1voxHaJaTyTG9T2FStrlrlQ+/FPGzfIrjOdsNMtPOfw75Jl1etZSJ0FTVXFTbkq0bj7EbwdMEtOMAfrqkBy7bZIo8qxX3/ouzXrvVlIcPqgAiiD0UzU1awP8KWAleF8aYenRQ2j6SWFxOIVHg112IC6jevl/3WUm13vHyIdN8Ecje9zQt8HHyNt31z54iXllPK/mO5rtt9J2a6zhbcfg3J1R1etZxajpJG2IbHvfQLSBwo=
+  on:
+    tags: true
+    repo: sealink/ckeditor-tags-plugin
