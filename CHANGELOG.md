@@ -5,4 +5,5 @@ This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
 ### Added
+- [TT-3546] Update jQuery to version 3 
 - [TT-3096] Initial release
