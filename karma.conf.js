@@ -52,10 +52,13 @@ module.exports = function (config) {
             },
             'test/**/*.js',
         ],
-        // optionally, configure the reporter
         coverageReporter: {
-          type : 'text',
-          dir : 'coverage/'
+          dir : 'coverage/',
+          reporters: [
+            { type: 'html', subdir: 'report-html' },
+            { type: 'lcov', subdir: 'report-lcov' },
+            { type: 'text' },
+          ],
         },
         autoWatch: true,
         frameworks: ['jasmine-jquery', 'jasmine'],
