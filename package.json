@@ -1,6 +1,6 @@
 {
   "name": "@sealink/ckeditor-tags-plugin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "John Mortlock <john.mortlock@gmail.com>",
   "description": "Provides an UI to select an item from a pre-configured list of items",
   "license": "MIT",
