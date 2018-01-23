@@ -26,3 +26,11 @@ Items have the format
   ["Item 2", "Value 2"],
 ]
 ```
+
+### How to publish?
+
+```
+Update changelog
+npm version patch
+git push --follow-tags
+```
