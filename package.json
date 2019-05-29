@@ -30,7 +30,7 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.1",
     "karma-coveralls": "^2.1.0",
-    "karma-jasmine": "^1.1.1",
+    "karma-jasmine": "^2.0.1",
     "karma-jasmine-jquery": "^0.1.1",
     "karma-phantomjs-launcher": "^1.0.4"
   }
