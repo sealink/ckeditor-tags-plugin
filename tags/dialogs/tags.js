@@ -23,7 +23,7 @@ CKEDITOR.dialog.add("tagDialog", function(editor) {
       }
     ],
     onOk: function() {
-      return editor.insertText(this.getValueOf("tab-tags", "tag-id"));
+      return editor.insertHtml(this.getValueOf("tab-tags", "tag-id"));
     }
   };
 });
