@@ -1,12 +1,11 @@
-## ckeditor-liquidtag-plugin  
+## ckeditor-liquidtag-plugin
 
 Allows the user to select from a pre-defined list of records and have
 it inserted into the editor at the current selection location.
 
 ### How to Install?
 
-```npm -i ckeditor-tags-plugin --save```
-
+`npm -i ckeditor-tags-plugin --save`
 
 ### Configuration
 

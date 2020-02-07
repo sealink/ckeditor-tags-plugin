@@ -10,18 +10,20 @@ CKEDITOR.dialog.add("tagDialog", function(editor) {
         label: "Tag Settings",
         elements: [
           {
-            type: 'select',
-            id: 'tag-id',
+            type: "select",
+            id: "tag-id",
             label: editor.config.tags.label,
             items: editor.config.tags.items,
-            validate: CKEDITOR.dialog.validate.notEmpty('Tag field cannot be empty'),
+            validate: CKEDITOR.dialog.validate.notEmpty(
+              "Tag field cannot be empty"
+            ),
             required: true
           }
         ]
       }
     ],
     onOk: function() {
-      return editor.insertText(this.getValueOf('tab-tags', 'tag-id'));
+      return editor.insertText(this.getValueOf("tab-tags", "tag-id"));
     }
   };
 });
