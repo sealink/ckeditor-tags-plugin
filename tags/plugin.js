@@ -6,7 +6,7 @@ CKEDITOR.plugins.add("tags", {
     editor.ui.addButton("InsertTag", {
       label: "Insert Tag",
       command: "showTags",
-      icon: this.path + 'icons/tags.png'
+      icon: this.path + "icons/tags.png"
     });
     return CKEDITOR.dialog.add("tagDialog", this.path + "dialogs/tags.js");
   }
