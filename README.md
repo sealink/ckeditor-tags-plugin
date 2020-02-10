@@ -1,3 +1,7 @@
+[![npm version](https://badge.fury.io/js/%40sealink%2Fckeditor-tags-plugin.svg)](https://badge.fury.io/js/%40sealink%2Fckeditor-tags-plugin)
+[![Coverage Status](https://coveralls.io/repos/github/sealink/ckeditor-tags-plugin/badge.svg?branch=master)](https://coveralls.io/github/sealink/ckeditor-tags-plugin?branch=master)
+[![Build Status](https://travis-ci.org/sealink/ckeditor-tags-plugin.svg?branch=master)](https://travis-ci.org/sealink/ckeditor-tags-plugin)
+
 ## ckeditor-liquidtag-plugin
 
 Allows the user to select from a pre-defined list of records and have
@@ -26,10 +30,22 @@ Items have the format
 ]
 ```
 
-### How to publish?
+### Deployment
+
+Build / Deployment is handled via travis CI.
+Package management is via NPM.
+
+First create the release branch
 
 ```
-Update changelog
-npm version patch
-git push --follow-tags
+git branch release/0.3.0
+```
+
+Second Update package.json and specify the version you are releasing
+
+Next Tag and push to travis
+
+```
+git tag v0.3.0
+git push origin master --tags
 ```
