@@ -2,11 +2,18 @@ language: node_js
 node_js:
   - 10
   - 12
-deploy:
-  provider: npm
-  email: support@travellink.com.au
-  api_key:
-    secure: s+L4ASj6N40i+oGu54PvM92BeT7SicsmP/4FAO8AGCHNGbeDxsssbIcA2xE6jRtFhe5nUnAd9KIrxVZpGVDCOSAhaYvACUBctfaF5qhTUPpTRlFA1r5y3LMQFm8gqVssZJBypWDtyWjMAyjxq/R/RbYfRcL+Xo6Y/6ueCCosQ9U/AuNR8pTBqUpg2iJ2M96iDhXVhhh1cXTgeQhvotUdTc/5V3PbaV9lanrvGoexp9JursZsAnoSHwS6k6vfoft4tL8re/ThKjK6E3h1YqyuV5CjG9MFx5ZijmXQ6DWvnmKF30UTg+8zHHDnqDEbMTFBvhffD7gzIM7vN0wpxAP5IHDBHWZJgC3BCDULSrlWRpWrP6udz/ED3MMWTidk6rG+B3Emyf0OrWuVNii25RL1JO1MQPoRI2Yi6qMKbu1yaL5Gd+3FGPxHATzsydViU1voxHaJaTyTG9T2FStrlrlQ+/FPGzfIrjOdsNMtPOfw75Jl1etZSJ0FTVXFTbkq0bj7EbwdMEtOMAfrqkBy7bZIo8qxX3/ouzXrvVlIcPqgAiiD0UzU1awP8KWAleF8aYenRQ2j6SWFxOIVHg112IC6jevl/3WUm13vHyIdN8Ecje9zQt8HHyNt31z54iXllPK/mO5rtt9J2a6zhbcfg3J1R1etZxajpJG2IbHvfQLSBwo=
-  on:
-    all_branches: true
-    tags: true
+jobs:
+  include:
+    - stage: npm release
+      node_js: 10
+      script: echo "Deploying to npm ..."
+      deploy:
+        provider: npm
+        email: support@travellink.com.au
+        skip_cleanup: true
+        node: "10.0"
+        api_key:
+          secure: hlgJ36yZ4eq9s/P+l4gmMH8qAYsL2F7GyXRp311c28GEIJuQyTwwHVylQkRuXZpwEMeuLUrqs4N3JC2b8tW3lwtdawFGshNOZG3lDnrc7xBstST9b3SKnRCFRHjKmjnNPbWyh2TnCGI4rwdeSrGYwhjRbVgUU1vNhdBM3WIGm8vO424tBK924U02yyrKjHyVFvWUhmThkGw3y2oJ5neuEVOd3rOgArXrrBMyEh4mnw6ncUIDXooWjvve7ZdsqxHNv1A3c+ZBJuZSVsanTaYI7OfXUiuA/3CDzMPG4nltUsN9BSXzH++3DFuqL3sJrtB3j6NGuniigX7FquY1k6aj11vAHnftGnSIaFammdM3zfSySw70K6ezW4DkINdygZst6RbdSW66sgjBpFIOvu7CW2orAU6QmJ+AUBi8PuMcqnnUWYapsmQq8QFLDnzncqIA9XOUrmRkPWGmJiCxuh0oyCLJocjtY8XerJF/4HvTJQKXf9x0ZHvozO3LayVqlH2hOmk9WsYB87MVj/42B3b5L/zyiLhErTEfYhEwdhSCCeC7pIYgf4nGc8mfEDwWOAYHbdxuJszoAn3CRr35ryzt8dWL71vxiQX0iukjYQ9by5zcJaoGCGIhxMm1NqOT254d7kiUqk8xugKUb+q8MuZMV/HRdMWUn/ltgSz6gsak10I=
+      on:
+        all_branches: true
+        tags: true
