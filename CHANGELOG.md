@@ -3,8 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## Unreleased
+## v0.2.0
 - [TT-5535] Update dependencies
+- [TT-6827] Allow insertion of HTML
+- [TT-6836] Setup travis publish pipeline
 
 ## v0.1.5
 - Final Test for travis CI deployment
