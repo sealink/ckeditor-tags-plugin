@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## v0.2.2
+- [TT-6836] Workaround travis bug (opt out of beta validation in admin)
+
 ## v0.2.1
 - [TT-6836] Fix deploy key
 
