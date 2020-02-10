@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## v0.2.1
+- [TT-6836] Fix deploy key
+
 ## v0.2.0
 - [TT-5535] Update dependencies
 - [TT-6827] Allow insertion of HTML

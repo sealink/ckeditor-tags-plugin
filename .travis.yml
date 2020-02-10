@@ -13,7 +13,7 @@ jobs:
         skip_cleanup: true
         node: "10.0"
         api_key:
-          secure: hlgJ36yZ4eq9s/P+l4gmMH8qAYsL2F7GyXRp311c28GEIJuQyTwwHVylQkRuXZpwEMeuLUrqs4N3JC2b8tW3lwtdawFGshNOZG3lDnrc7xBstST9b3SKnRCFRHjKmjnNPbWyh2TnCGI4rwdeSrGYwhjRbVgUU1vNhdBM3WIGm8vO424tBK924U02yyrKjHyVFvWUhmThkGw3y2oJ5neuEVOd3rOgArXrrBMyEh4mnw6ncUIDXooWjvve7ZdsqxHNv1A3c+ZBJuZSVsanTaYI7OfXUiuA/3CDzMPG4nltUsN9BSXzH++3DFuqL3sJrtB3j6NGuniigX7FquY1k6aj11vAHnftGnSIaFammdM3zfSySw70K6ezW4DkINdygZst6RbdSW66sgjBpFIOvu7CW2orAU6QmJ+AUBi8PuMcqnnUWYapsmQq8QFLDnzncqIA9XOUrmRkPWGmJiCxuh0oyCLJocjtY8XerJF/4HvTJQKXf9x0ZHvozO3LayVqlH2hOmk9WsYB87MVj/42B3b5L/zyiLhErTEfYhEwdhSCCeC7pIYgf4nGc8mfEDwWOAYHbdxuJszoAn3CRr35ryzt8dWL71vxiQX0iukjYQ9by5zcJaoGCGIhxMm1NqOT254d7kiUqk8xugKUb+q8MuZMV/HRdMWUn/ltgSz6gsak10I=
-      on:
-        all_branches: true
-        tags: true
+          secure: OXJTguln44ZaLgscPSb97SP7uXTrDD8OW4dZHEyHhVmg+jSYs74weGlp9HxgPPlbFOj9vnK2oNFBQIwY6yDSq4V0fxYFLnjN7mgRHK3ZaSpkgQt9/E4XzSdvcFWbbdq8+jDCGRLPE7D4fU6/Ao3kIpAXm6xBIFeS1BQuvNeIeQ1NKyeGc30532E1eGMLmnGXoqj6IT4V3DjVy/4vLoa+gzHLM31Kh7a28maJynpvxWXp9IcUjhMY01i2723eCVwqtFh01FC4urrNW7bgydQE6kg6kTeAOPCjWWArttMvOsnhfELNtIin3Y6dwBJ1GF0CExN7zKFmaGEsaI/1wzI7dOHQOdFtajIJ+Sgjw4AZnhQ8oXRwwMMxjD4M+5jAd+TJM9nRafd9uaHid27yN+77YyRN30FZn18QxtnmBTiv5jUgsH4FtjZE5RlUCkyLLlQJbqakKUZS9OIHNdXn4tX5Czum0Xj2fY38y1Juv2uNx2XIL/4oKqd67X2SB0gFgSRpBLjG3Fr3FB7cUDKljsCWCdu+0pDbBbflpDJS7K1aDz3G6DKZliSCm7XHIrb6NS43d7xW84dXUqvqOUiw5SOCAQR6L4O1y3YFrqPSeMYNhmAS1GarptrtjigHz8zINI5L8HmoKsh1BUUCa6u9sKvtASIqUcZt0M1NaRuRbQrsulo=
+        on:
+          all_branches: true
+          tags: true
