@@ -62,10 +62,9 @@ module.exports = function(config) {
     },
     autoWatch: true,
     frameworks: ["jasmine-jquery", "jasmine"],
-    browsers: ["Chrome"],
+    browsers: ["ChromeHeadless"],
     plugins: [
       "karma-chrome-launcher",
-      "karma-phantomjs-launcher",
       "karma-jasmine-jquery",
       "karma-jasmine",
       "karma-coverage",
