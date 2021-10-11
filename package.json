@@ -20,7 +20,7 @@
   "devDependencies": {
     "ckeditor": "^4.8.0",
     "coveralls": "^3.0.0",
-    "eslint": "^7.0.0",
+    "eslint": "^8.0.0",
     "eslint-plugin-jasmine": "^4.0.0",
     "istanbul": "^0.4.5",
     "jasmine-core": "^3.4.0",
