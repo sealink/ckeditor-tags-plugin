@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This changelog adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## Unreleased
+- [OPS-221] Travis to GHactions
+
 ## v0.2.2
 - [TT-6836] Workaround travis bug (opt out of beta validation in admin)
 

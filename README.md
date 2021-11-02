@@ -1,6 +1,6 @@
 [![npm version](https://badge.fury.io/js/%40sealink%2Fckeditor-tags-plugin.svg)](https://badge.fury.io/js/%40sealink%2Fckeditor-tags-plugin)
 [![Coverage Status](https://coveralls.io/repos/github/sealink/ckeditor-tags-plugin/badge.svg?branch=master)](https://coveralls.io/github/sealink/ckeditor-tags-plugin?branch=master)
-[![Build Status](https://travis-ci.org/sealink/ckeditor-tags-plugin.svg?branch=master)](https://travis-ci.org/sealink/ckeditor-tags-plugin)
+[![Build Status](https://github.com/sealink/ckeditor-tags-plugin/workflows/Build%20and%20Test/badge.svg?branch=master)](https://github.com/sealink/ckeditor-tags-plugin/actions)
 
 ## ckeditor-liquidtag-plugin
 
